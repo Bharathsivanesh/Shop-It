@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+  
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 30px;
+}
+
+.product-container img {
+    width: 400px;
+    height: 280px;
+    margin-right: 10rem;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 18px;
+    color: #FF5722;
+    margin-bottom: 1rem;
+}
+
+.delivery {
+    font-size: 16px;
+    color: #555;
+}
+
+.buy-now {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.buy-now:hover {
+    background-color: #F44336;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+p{
+    font-size: 20px;
+    font-weight: bolder;
+
+    letter-spacing: 3px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Details</h1>
+    </header>
+
+    <div class="product-container">
+        <img src="birthday image/ear1.jpeg" alt="Product Image">
+       
+        <div class="product-info">
+            <h2>Earings</h2>
+            <p class="price">&#8377 1,445 <del>&#8377 2,445</del></p>
+            <p class="delivery">Earliest Delivery: Today</p>
+            <button class="buy-now" onclick="fun()">Buy Now</button>
+        </div>
+        <img src="birthday image/ear3.jpeg" alt="Product Image">
+    </div>
+
+    <footer>
+        <p>Happy Shopping! Thank You</p>
+    </footer>
+    <script>
+        function fun()
+        {
+            alert('Purchase sucessfull');
+        }
+    </script>
+</body>
+</html>

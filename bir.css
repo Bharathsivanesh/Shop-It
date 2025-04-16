@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+}
+
+.image-wrapper {
+    cursor: pointer;
+}
+
+.zoomed-image {
+    display: none;
+    overflow: hidden;
+}
+
+.zoomed-image img {
+    width: 100%;
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}
+
